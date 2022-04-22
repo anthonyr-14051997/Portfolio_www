@@ -1,0 +1,755 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+body {
+  background: #F6F8FF;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 140vh;
+}
+body main {
+  position: relative;
+  width: 40vw;
+  height: 130vh;
+  background: #F6F8FF;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 8% 10% 45%;
+  grid-gap: 10px;
+  grid-template-areas: "titre" "search" "blockk";
+}
+body main .containtitre .titre {
+  grid-area: titre;
+  width: 100%;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+body main .containtitre .titre .title {
+  height: 39px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 39px;
+  /* identical to box height */
+  color: #222731;
+}
+body main .containtitre .titre .dark {
+  display: none;
+  align-items: center;
+  margin-top: 2vh;
+}
+body main .containtitre .titre .dark:hover {
+  cursor: pointer;
+}
+body main .containtitre .titre .dark:hover path {
+  fill: #222731;
+}
+body main .containtitre .titre .dark:hover .lumi {
+  color: #222731;
+}
+body main .containtitre .titre .dark .lune {
+  margin-left: 1vh;
+}
+body main .containtitre .titre .dark svg path {
+  fill: #697C9A;
+}
+body main .containtitre .titre .dark .lumi {
+  height: 19px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 2.5px;
+  color: #697C9A;
+}
+body main .containtitre .titre .light {
+  display: none;
+  align-items: center;
+  margin-top: 2vh;
+}
+body main .containtitre .titre .light:hover {
+  cursor: pointer;
+}
+body main .containtitre .titre .light:hover .lum {
+  color: #90A4D4;
+}
+body main .containtitre .titre .light:hover path {
+  fill: #90A4D4;
+}
+body main .containtitre .titre .light .sun {
+  margin-left: 1vh;
+}
+body main .containtitre .titre .light .lum {
+  height: 19px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+}
+body main .containtitre .titre .light svg path {
+  fill: #ffffff;
+}
+body main .off {
+  font-family: "Space Mono", monospace;
+  color: red;
+  text-align: center;
+}
+body main .containsearch .search {
+  grid-area: search;
+  display: flex;
+  width: 100%;
+  height: 60%;
+  background: #FEFEFE;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 15px;
+}
+body main .containsearch .search .loupe {
+  width: 5vh;
+  height: 5vh;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+body main .containsearch .search .yep {
+  height: 90%;
+  width: 40vh;
+  border-style: none;
+  outline: none;
+  caret-color: #058eff;
+  margin-left: 2vh;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  color: #222731;
+  background-color: transparent;
+}
+body main .containsearch .search .yep::placeholder {
+  opacity: 0.75;
+}
+body main .containsearch .search .yep2::placeholder {
+  color: #ffffff;
+}
+body main .containsearch .search .yep3::placeholder {
+  color: #4B6A9B;
+}
+body main .containsearch .search .nop {
+  height: 80%;
+  width: 30vh;
+  font-size: 1.8rem;
+  border-style: none;
+  margin-top: 1.5vh;
+  margin-right: 1vh;
+  cursor: default;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  color: red;
+}
+body main .containsearch .search button {
+  margin: 1vh 1vh 1vh 0vh;
+  width: 13vh;
+  height: 70%;
+  float: right;
+  background: #0079FF;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  border-style: none;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+body main .containsearch .search button:hover {
+  cursor: url("./img/main.svg"), pointer;
+  background: #60ABFF;
+}
+body main .block {
+  height: 110%;
+  display: grid;
+  grid-area: blockk;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "block1" "block2";
+  background: #FEFEFE;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 15px;
+  display: flex;
+}
+body main .block2 {
+  grid-area: block2;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+}
+body main .block2 .block3 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3vh;
+}
+body main .block2 .block3 .titre2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+body main .block2 .block3 .titre2 .imgtitre {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+}
+body main .block2 .block3 .titre2 .imgtitre .icon {
+  width: 13vh;
+  height: 13vh;
+  border-radius: 50%;
+}
+body main .block2 .block3 .titre2 .imgtitre .name {
+  margin-left: 7%;
+}
+body main .block2 .block3 .titre2 .imgtitre .name .pseudo {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  /* identical to box height */
+  color: #2B3442;
+}
+body main .block2 .block3 .titre2 .imgtitre .name .apseudo {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-left: 2%;
+  /* identical to box height */
+  color: #0079FF;
+}
+body main .block2 .block3 .titre2 .bio {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  /* identical to box height, or 167% */
+  color: #4B6A9B;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-top: 1vh;
+  margin-left: 50%;
+  width: 100%;
+}
+body main .block2 .block3 .date {
+  grid-area: droite;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  color: #697C9A;
+  margin-top: 3vh;
+}
+body main .block2 .blockbis {
+  margin-right: 3vh;
+  margin-left: 20%;
+}
+body main .block2 .blockbis .infosgit {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  background: #F6F8FF;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 5vh;
+  font-size: 1.3em;
+}
+body main .block2 .blockbis .infosgit div {
+  display: flex;
+  flex-direction: column;
+}
+body main .block2 .blockbis .infosgit div .repository {
+  height: 19px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  color: #4B6A9B;
+}
+body main .block2 .blockbis .infosgit div .reposnb {
+  height: 33px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 33px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #2B3442;
+}
+body main .block2 .blockbis .infosgit div .wers {
+  height: 19px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  color: #4B6A9B;
+}
+body main .block2 .blockbis .infosgit div .wersnb {
+  height: 33px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 33px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #2B3442;
+}
+body main .block2 .blockbis .infosgit div .wing {
+  height: 19px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  color: #4B6A9B;
+}
+body main .block2 .blockbis .infosgit div .wingnb {
+  height: 33px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 33px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #2B3442;
+  
+}
+body main .block2 .blockbis .reseau {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+  font-size: 1em;
+}
+body main .block2 .blockbis .reseau .reseau1 {
+  margin-top: 2vh;
+  margin-right: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: .8em;
+}
+body main .block2 .blockbis .reseau .reseau1 .posit .position {
+  height: 22px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  color: #4B6A9B;
+}
+body main .block2 .blockbis .reseau .reseau1 .posit .position:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+body main .block2 .blockbis .reseau .reseau1 .posit .imgposi {
+  width: 19.99px;
+  height: 19.85px;
+}
+body main .block2 .blockbis .reseau .reseau1 .linke .lien {
+  height: 22px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  color: #4B6A9B;
+}
+body main .block2 .blockbis .reseau .reseau1 .linke .lien:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+body main .block2 .blockbis .reseau .reseau1 .linke .imglink {
+  width: 19.99px;
+  height: 19.94px;
+}
+body main .block2 .blockbis .reseau .reseau1 .tweete {
+  opacity: 0.5;
+  margin-left: -20vh;
+}
+body main .block2 .blockbis .reseau .reseau1 .tweete .tweet {
+  height: 22px;
+  font-family: "Space Mono", monospace;
+  
+  
+  
+  color: #4B6A9B;
+}
+body main .block2 .blockbis .reseau .reseau1 .tweete .tweet:hover {
+  text-decoration: underline;
+  cursor: url("./img/main.svg"), pointer;
+}
+body main .block2 .blockbis .reseau .reseau1 .tweete .tweete {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+body main .block2 .blockbis .reseau .reseau1 .tweete .imgtweet {
+  width: 20px;
+  height: 19.85px;
+}
+body main .block2 .blockbis .reseau .reseau1 .agith {
+  margin-left: -20vh;
+}
+body main .block2 .blockbis .reseau .reseau1 .agith .agit {
+  height: 22px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  color: #4B6A9B;
+}
+body main .block2 .blockbis .reseau .reseau1 .agith .agit:hover {
+  text-decoration: underline;
+  cursor: url("./img/main.svg"), pointer;
+}
+body main .block2 .blockbis .reseau .reseau1 .agith .imgagit {
+  width: 20px;
+  height: 19.85px;
+}
+
+/* resptel ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* @media only screen and (max-width: 214px) {
+  body {
+    justify-content: left;
+    width: auto;
+   
+  }
+  body main {
+    width: 60vh;
+    grid-template-columns: 100%;
+    grid-gap: 15px;
+    margin-left: 1vh;
+    height: auto;
+    justify-content: space-between;
+  }
+  body main .containtitre .titre {
+    width: 95%;
+  }
+  body main .containtitre .titre .title {
+    font-size: 1.7rem;
+    margin-top: 1vh;
+  }
+  body main .containtitre .titre .dark .lumi {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  body main .containtitre .titre .light .lum {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  body main .containsearch .search {
+    width: 95%;
+    height: 90%;
+    margin-bottom: 5vh;
+  }
+  body main .containsearch .search .loupe {
+    width: 4vh;
+    height: 4vh;
+    margin-left: 1vh;
+    margin-top: 2vh;
+  }
+  body main .containsearch .search .yep {
+    margin-left: 1vh;
+    width: 20vh;
+    font-size: .7rem;
+    
+  }
+  body main .containsearch .search button {
+    height: 6vh;
+    margin-left: -7vh;
+    font-size: 1rem;
+    left: 36%;
+  }
+  body main .containsearch .search .nop {
+      font-size: .7rem;
+    width: 10vh;
+    margin-top: 1.7vh;
+    margin-right: 15vh;
+    color: red;
+
+  }
+  body main .block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    display: flex;
+    height: 80vh;
+    width: 95%;
+  }
+  body main .block .block1 {
+    position: absolute;
+  }
+  body main .block .block1 .icon {
+    margin-top: 1vh;
+    margin-left: 1vh;
+    height: 13vh;
+    width: 13vh;
+  }
+  body main .block .block2 {
+    width: 100%;
+    margin: 1vh;
+  }
+  body main .block .block2 .block3 .titre2 .name {
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body main .block .block2 .block3 .titre2 .name .pseudo {
+    font-size: 1.3rem;
+  }
+  body main .block .block2 .block3 .titre2 .name .apseudo {
+    margin-top: -2vh;
+    margin-left: 0.5vh;
+    font-size: 1rem;
+  }
+  body main .block .block2 .block3 .titre2 .bio {
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 2vh;
+    width: 90%;
+    font-size: 1rem;
+  }
+  body main .block .block2 .block3 .date {
+    position: absolute;
+    
+    margin-left: 19vh;
+    width: 80vh;
+    font-size: 0.7rem;
+  }
+  body main .block .block2 .blockbis {
+    position: absolute;
+    margin-top: 28vh;
+    margin-left: 0.5vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .block .block2 .blockbis .infosgit {
+    width: 90%;
+    height: 15vh;
+    align-items: center;
+    margin-top: 1.5vh;
+  }
+  body main .block .block2 .blockbis .infosgit .reposal .repository, body main .block .block2 
+      .blockbis .infosgit .reposal .wers, body main .block .block2 .blockbis .infosgit .reposal 
+      .wing, body main .block .block2 .blockbis .infosgit .wersal .repository, body main .block 
+      .block2 .blockbis .infosgit .wersal .wers, body main .block .block2 .blockbis .infosgit 
+      .wersal .wing, body main .block .block2 .blockbis .infosgit .wingal .repository, body main 
+      .block .block2 .blockbis .infosgit .wingal .wers, body main .block .block2 .blockbis .infosgit .wingal .wing {
+    margin-bottom: 2vh;
+    font-size: 1rem;
+  }
+  body main .block .block2 .blockbis .infosgit .reposal .reposnb, body main .block .block2 
+      .blockbis .infosgit .reposal .wersnb, body main .block .block2 .blockbis .infosgit 
+      .reposal .wingnb, body main .block .block2 .blockbis .infosgit .wersal .reposnb, body main 
+      .block .block2 .blockbis .infosgit .wersal .wersnb, body main .block .block2 .blockbis .infosgit 
+      .wersal .wingnb, body main .block .block2 .blockbis .infosgit .wingal .reposnb, body main .block 
+      .block2 .blockbis .infosgit .wingal .wersnb, body main .block .block2 .blockbis .infosgit .wingal .wingnb {
+    font-size: 1rem;
+  }
+  body main .block .block2 .blockbis .reseau {
+    width: 53vh;
+    height: 13vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0vh;
+    margin-left: 0vh;
+  }
+  body main .block .block2 .blockbis .reseau .reseau1 .agith {
+      margin-left: 0vh;
+  }
+  body main .block .block2 .blockbis .reseau .reseau1 .tweete {
+      margin-left: 0vh;
+  }
+  body main .block .block2 .blockbis .reseau .reseau1 .posit .position, body main .block .block2 
+      .blockbis .reseau .reseau1 .posit .lien, body main .block .block2 .blockbis .reseau .reseau1 
+      .posit .tweet, body main .block .block2 .blockbis .reseau .reseau1 .posit .agit, body main .block 
+      .block2 .blockbis .reseau .reseau1 .linke .position, body main .block .block2 .blockbis .reseau 
+      .reseau1 .linke .lien, body main .block .block2 .blockbis .reseau .reseau1 .linke .tweet, body main 
+      .block .block2 .blockbis .reseau .reseau1 .linke .agit, body main .block .block2 .blockbis .reseau 
+      .reseau1 .tweete .position, body main .block .block2 .blockbis .reseau .reseau1 .tweete .lien, body main 
+      .block .block2 .blockbis .reseau .reseau1 .tweete .tweet, body main .block .block2 .blockbis .reseau 
+      .reseau1 .tweete .agit, body main .block .block2 .blockbis .reseau .reseau1 .agith .position, body main 
+      .block .block2 .blockbis .reseau .reseau1 .agith .lien, body main .block .block2 .blockbis .reseau .reseau1 
+      .agith .tweet, body main .block .block2 .blockbis .reseau .reseau1 .agith .agit {
+    font-size: 1rem;
+  }
+  body main .nop {
+    width: 100%;
+  }
+} */
+/* resptablette --------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1022px) {
+  body {
+    
+    justify-content: center;
+    margin-top: 20vh;
+    height: 90vh;
+  }
+  body main {
+    width: 50vh;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin: 3vh;
+  }
+  body main .containtitre .titre {
+    margin-top: 8vh;
+    width: 95%;
+  }
+  body main .containtitre .titre .title {
+    font-size: 2rem;
+    margin-top: 1vh;
+  }
+  body main .containtitre .titre .dark .lumi {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  body main .containtitre .titre .light .lum {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  body main .containsearch .search {
+    margin-top: 5vh;
+    width: 95%;
+    height: 50%;
+  }
+  body main .containsearch .search .yep {
+    margin-left: 1vh;
+    width: 60%;
+  }
+  body main .containsearch .search .yep::placeholder {
+    font-size: 1rem;
+  }
+  body main .containsearch .search .loupe {
+    width: 3vh;
+    height: 3vh;
+    margin-top: .7vh;
+    margin-left: 1vh;
+  }
+  body main .containsearch .search button {
+    width: 20%;
+    height: 80%;
+    margin: 0.5vh 1vh 0vh 0vh;
+    font-size: .7em;
+  }
+  body main .containsearch .search .nop {
+    position: relative;
+    margin-right: 3vh;
+    margin-top: .2vh;
+    width: 10%;
+    font-size: 1rem;
+      color: red;
+  }
+  body main .block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    display: flex;
+    height: 50vh;
+    width: 95%;
+    margin: 0vh;
+  }
+  body main .block .block1 {
+    position: absolute;
+    margin: 0vh;
+  }
+  body main .block .block1 .icon {
+    margin-top: 4vh;
+    margin-left: 2vh;
+    height: 10vh;
+    width: 10vh;
+  }
+  body main .block .block2 {
+    width: 95%;
+    margin: 1vh;
+  }
+  body main .block .block2 .block3 .titre2 .name {
+    position: absolute;
+    margin-top: 1vh;
+    margin-left: 15vh;
+    margin-bottom: 0vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body main .block .block2 .block3 .titre2 .name .pseudo {
+    margin-bottom: -1.5vh;
+    margin-top: 0vh;
+    font-size: 1.3rem;
+  }
+  body main .block .block2 .block3 .titre2 .name .apseudo {
+    margin-top: 0vh;
+    margin-left: 0.5vh;
+    font-size: 1rem;
+  }
+  body main .block .block2 .block3 .titre2 .bio {
+    position: absolute;
+    margin-top: 15vh;
+    margin-left: 2vh;
+    width: 90vw;
+    font-size: 1.1rem;
+  }
+  body main .block .block2 .block3 .date {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 15vh;
+    width: 80vh;
+    font-size: .7rem;
+  }
+  body main .block .block2 .blockbis {
+    position: absolute;
+    margin-top: 18vh;
+    margin-left: 1vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .block .block2 .blockbis .infosgit {
+    font-size: .8em;
+    width: 90%;
+    height: 8vh;
+    align-items: center;
+  }
+  
+  
+  body main .block .block2 .blockbis .reseau {
+    width: 95%;
+    height: 13vh;
+    margin-top: 0vh;
+  }
+  body main .block .block2 .blockbis .reseau .reseau1 {
+      width: 100%;
+      margin-right: 0vh;
+      font-size: .7em;
+  }
+  body main .block .block2 .blockbis .reseau .reseau1 .agith {
+      margin-left: 1vh;
+  }
+  body main .block .block2 .blockbis .reseau .reseau1 .tweete {
+      margin-left: 1vh;
+      width: 100%;
+  }
+  
+}

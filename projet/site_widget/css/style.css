@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+    margin: 0;
+}
+/* remettre a neuf */
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+body img {
+    width: 80%;
+    height: 10vh;
+}
+.box-shadow {
+    width: 80%;
+    box-shadow: 0px 50px 50px black;
+}
+header {
+    height: 10vh;
+}
+main {
+    background: linear-gradient( #9198e5, #e66465);
+}
+main section {
+    width: 100%;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+main img {
+    width: 100%;
+    height: 30vh;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+body input {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    
+
+
+}
+body input:hover {
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe,
+            inset -5px -5px 10px #ffffff;
+}
+body textarea {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    
+}
+body textarea:hover {
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe,
+            inset -5px -5px 10px #ffffff;
+}
+body textarea::placeholder {
+    color: rgb(0, 0, 0);
+}
+body input::placeholder {
+    color: rgb(0, 0, 0);
+}
+body button {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    
+}
+body button:hover {
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe,
+            inset -5px -5px 10px #ffffff;
+}
+
+/* vrai modfi */
+
+h1 {
+    text-align: center;
+    align-content: center;
+    margin: 5vh;
+    color: whitesmoke;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh;
+}
+
+/* meteo */
+.meteoo {
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+section #meteoo {
+    height: 50vh;
+}
+.titre h3 {
+    margin: 2vh;
+}
+#valider {
+    width: 30%;
+    color: rgb(0, 0, 0);
+    margin: 2vh;
+}
+.widget {
+    display: flex;
+}
+
+/* convertisseur */
+.convert {
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.convert input {
+    border-radius: 5px;
+    margin: 1vh;
+}
+.boutonmenuprincipale, .boutonmenuprincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    border-radius: 10px;
+}
+.fontconv {
+    margin-bottom: 2vh;
+    
+    height: 10%;
+    text-align: center;
+    align-content: center;
+}
+.widgetconv {
+    display: flex;
+}
+.dropdown {
+    margin-left: 5vh;
+    display: flex;
+}
+
+/* calc */
+.calc {
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.calc tbody button {
+    background-color: grey;
+    width: 100%;
+}
+
+/* mdpass */
+.mdpass {
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+#mdpass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.modp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.mdpass form {
+    display: flex;
+    width: 50%;
+}
+form p {
+    margin-right: 2vh;
+}
+.genera {
+    width: 20%;
+    height: 20%;
+    margin: 5vh;
+}
+.info {
+    width: 100%;
+}
+.info input {
+    margin: 2vh;
+    width: 100%;
+    height: 40%;
+}
+
+/* price */
+.price {
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* plouf */
+.ploufplouf {
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 50vh;   
+}
+
+#iframe {
+    width: 100%;
+    height: 80%;
+}
+
+/* carac */
+.compteur {
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+@media screen and (max-width:1081px){
+    .modp form {
+        display: flex;
+        flex-direction: column;
+    }
+    .modp form > p {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 536px){
+    .widgetconv {
+        display: flex;
+        flex-direction: column;
+    }
+}

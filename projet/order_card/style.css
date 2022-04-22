@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+#texte {
+    text-align: center;
+}
+#change {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#bodycard {
+    height: 85%;
+    width: 20rem;
+}
+.tout {
+    display: flex;
+    justify-content: space-around;
+}
+.ch {
+    align-self: center;
+    margin-right: 2vh;
+}
+.link:hover {
+    text-decoration: none;
+}
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+    margin-right: 5vh;
+}
+#img img {
+    width: 5vh;
+}
+#btnn {
+    border-radius: 5%;
+}
+@media screen and (max-width: 1400px) {
+    * {
+        margin: 0;
+    }
+    #bodycard {
+        height: 90%;
+        width: 90%;
+    }
+    .titreun {
+        font-size: 1em;
+    }
+    .txtun {
+        font-size: 1em;
+    }
+    #texte {
+        width: 100%;
+    }
+    .txt {
+        font-size: .7em;
+    }
+    .card-body {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1025px) {
+    * {
+        margin: 0;
+    }
+    #bodycard {
+        height: 90%;
+        width: 20rem;
+    }
+    .titreun {
+        font-size: 1em;
+    }
+    .txtun {
+        font-size: 1em;
+    }
+    #texte {
+        width: 100%;
+    }
+    .txt {
+        font-size: .7em;
+    }
+    .card-body {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 769px) {
+    * {
+        margin: 0;
+    }
+    #bodycard {
+        height: 90%;
+        width: 60%;
+    }
+    #bodycard img {
+        width: 100%;
+    }
+    .titreun {
+        font-size: 1em;
+    }
+    .txtun {
+        font-size: 1em;
+        margin: 0;
+    }
+    #texte {
+        width: 100%;
+    }
+    .txt {
+        font-size: .7em;
+        margin-right: 5vh;
+    }
+    #img {
+        margin: 0;
+    }
+    .card-body {
+        width: 100%;
+    }
+    .change {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    * {
+        margin: 0;
+    }
+    #bodycard {
+        height: 90%;
+        width: 90%;
+    }
+    .titreun {
+        font-size: 1em;
+    }
+    .txtun {
+        font-size: 1em;
+    }
+    #texte {
+        width: 100%;
+    }
+    .card-title {
+        font-size: 1.5em;
+    }
+    .txt {
+        font-size: .7em;
+        margin-left: 2vh;
+        margin-right: 1vh;
+    }
+    #img img {
+        width: 10vh;
+        margin: 2vh;
+    }
+    .card-body {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 301px) {
+    * {
+        margin: 0;
+    }
+    #bodycard {
+        height: 90%;
+        width: 90%;
+    }
+    .titreun {
+        font-size: 1em;
+    }
+    .txtun {
+        font-size: 1em;
+    }
+    #texte {
+        width: 100%;
+    }
+    .card-title {
+        font-size: 1.5em;
+    }
+    .txt {
+        font-size: .7em;
+        margin-left: 2vh;
+    }
+    #img img {
+        width: 10vh;
+        margin: 2vh;
+    }
+    .card-body {
+        width: 100%;
+    }
+}

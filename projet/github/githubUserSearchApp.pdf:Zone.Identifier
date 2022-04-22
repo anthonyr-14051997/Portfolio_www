@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://pf.vos-competences.com/apprenant/dossier_partage/php/partage_dossiers.php?idutilisateur=
+HostUrl=https://pf.vos-competences.com/apprenant/dossier_partage/php/download_ajax.php?guid=adae62cd31d4fc2de29b9d14f4a91f3a

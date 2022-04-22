@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box-shadow">
+        <header>
+            <nav>
+                <h1>Site-Widget</h1>
+            </nav>
+        </header>
+        <main>
+            <h2>Meteo</h2>
+            <section class="meteoo">
+                
+                
+                    <div id="meteoo">
+                        <div class="titre">
+                            <h3>Météo</h3>
+                            <div id="ligne"></div>
+                        </div>
+                        <div class="widget">
+                            <input id="queryLoc" type="text" placeholder="ex : paris" />
+                            <input id="valider" type="button" value="valider" onclick="buttonClickGET()" />
+                        </div>
+                        <div id="resultat">
+                            <div id="icon" ><img id="wicon" src="" alt="Weather icon"></div>
+                            <br>
+                            <p id="zone_meteo"></p>
+                        </div>
+                    </div>
+            </section>
+            <h2>Convertisseur</h2>
+            <section class="convert">
+                
+                
+                    <div id="convertisseur">
+                        <div class="titre">
+                            <h3>Convertisseur</h3>
+                        </div>
+                        <div class="widgetconv">
+        
+                            <div class="dropdown">
+                                <a class="boutonmenuprincipal"><p class="fontconv">Convertisseur de poids :</p></a>
+                                <div class="dropdown-child"> 
+                                    <div class="form-group">
+                                        <input id="grammes" type="number" placeholder="Grammes"><span>grammes</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="kilos" type="number" placeholder="Kilos"><span>kilos</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="livres" type="number" placeholder="livres"><span>livres</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <a class="boutonmenuprincipale"><p class="fontconv">Convertisseur de mesures :</p></a>
+                                <div class="dropdown-childe">
+                                    <div class="form-group">
+                                        <input id="km" type="number" placeholder="km"><span>km</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="m" type="number" placeholder="m"><span>m</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="dm" type="number" placeholder="dm"><span>dm</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="cm" type="number" placeholder="cm"><span>cm</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="mm" type="number" placeholder="mm"><span>mm</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="dropdown-child">
+                                    <div class="form-group">
+                                        <input id="mi" type="number" placeholder="mille"><span>mille</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="inch" type="number" placeholder="pouces"><span>pouces</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="ft" type="number" placeholder="feet"><span>feet</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="yrd" type="number" placeholder="yard"><span>yard</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+            </section>
+            <h2>Calculatrice</h2>
+            <section class="calc">
+                
+                
+                    <div id="calculette">
+                        <div class="titre">
+                            <h3>Calculatrice</h3>
+                        </div>
+                        <table>
+        
+                            <thead>
+                                <tr>
+                                    <td colspan="4">
+                                        <div  id="calcula">
+                                            <input id="formule" type="text" value="" />
+                                            <div id="result"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <button id="ce" onclick="erase()">CE</button>
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch('/');">/</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button onclick="click_touch(7);">7</button> 
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch(8);">8</button> 
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch(9);">9</button> 
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch('*');">*</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button onclick="click_touch(4);">4</button>
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch(5);">5</button>
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch(6);">6</button> 
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch('-');">-</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button onclick="click_touch(1);">1</button>
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch(2);">2</button> 
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch(3);">3</button> 
+                                    </td>
+                                    <td>
+                                        <button onclick="click_touch('+');">+</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <button onclick="click_touch(0);">0</button>
+                                    </td>
+                                    <td>
+                                        <button id="egal" onclick="egal();">=</button> 
+                                    </td>
+                                </tr>
+                            </tbody>
+        
+                        </table>
+                    </div>
+            </section>
+            <h2>Générateur de mot de pass</h2>
+            <section class="mdpass">
+                
+                
+                    <div id="mdpass">
+                        <div class="titre">
+                            <h3>Générateur de mot de passe</h3>
+                        </div>
+                        <div class="modp">
+        
+                            <form class="form" name="myform">
+        
+                                <p class="chapitre">Premier caractére</p>
+        
+                                <div class="first">
+        
+                                    <div class="chek">
+                                        <input id="checked" type=checkbox name=firstNumber checked>
+                                        <p class="chekt">Chiffres</p>
+                                    </div>
+        
+                                    <div class="chek">
+                                        <input id="checked" type=checkbox name=firstLower checked>
+                                        <p class="chekt">Minuscules<br></p>
+                                    </div>
+        
+                                    <div class="chek">
+                                        <input id="checked" type=checkbox name=firstUpper checked>
+                                        <p class="chekt">Majuscules</p>
+                                    </div>
+        
+                                    <div class="chek">
+                                        <input id="checked" type=checkbox name=firstOther>
+                                        <p class="chekt">Autres</td></p>
+                                    </div>
+        
+                                </div>
+        
+                                <p class="chapitre">Caractéres suivants</p>
+        
+                                <div class="second">
+        
+                                    <div class="chek">
+                                        <input id="checked" type=checkbox name=latterNumber checked>
+                                        <p class="chekt">Chiffres</p>
+                                    </div>
+                                    <div class="chek">
+                                        <input id="checked" type=checkbox name=latterLower checked>
+                                        <p class="chekt">Minuscules<br></p>
+                                    </div>
+                                    <div class="chek">
+                                        <input id="checked" type=checkbox name=latterUpper checked>
+                                        <p class="chekt">Majuscules</p>
+                                    </div>
+                                    <div class="chek">
+                                        <input type=checkbox name=latterOther>
+                                        <p class="chekt">Autres</p>
+                                    </div>
+        
+                                </div>
+                                <div class="info">
+                                    <input class="genere" type=text name=passwordLength placeholder="Taille" size=3>
+        
+                                    <!-- <input class="genere" type=text name=extraChars placeholder="Autres caractères" size=20>  -->
+        
+                                    <input class="monmdp" type=text name=password placeholder="mdp" size=20>
+                                </div>
+                                <!--  document.myform.extraChars.value, -->
+                                <br>
+                                <input class="genera" type=button value="valider" onClick="document.myform.password.value =
+                                    getPassword(document.myform.passwordLength.value,
+                                    document.myform.firstNumber.checked, document.myform.firstLower.checked,
+                                    document.myform.firstUpper.checked, document.myform.firstOther.checked,
+                                    document.myform.latterNumber.checked, document.myform.latterLower.checked,
+                                    document.myform.latterUpper.checked, document.myform.latterOther.checked);">
+                            </form>
+                        </div>
+                    </div>
+            </section>
+            <h2>Juste prix</h2>
+            <section class="price">
+                
+                
+                    <div id="price">
+                        <div class="titre">
+                            <h3>Juste prix</h3>
+                        </div>
+                        <div class="container">
+                            <div class="jumbotron text-center">
+                                <p>Le prix à devinez est entre 0 et 20.<span class="prixMax"></span></p>
+                                <p class="chrono">30</p>
+                                <p class="secondes">Secondes</p>
+                                <p class="reponse">Trouvez le Juste Prix !</p>
+                                <form id="paris" class="form-inline" role="form">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Entrez un nombre" autocomplete="off">
+                                    <button type="submit" class="btn btn-default" id="parie">Parier !</button>
+                                </form>
+                                <button id="commencer" class="btn btn-large btn-danger">Commencer !</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <h2>Plouf plouf</h2>
+            <section class="ploufplouf">
+                
+                
+                    <div id="ploufplouf">
+                        <div class="titre">
+                            <h3>Plouf Plouf</h3>
+                        </div>
+                        <iframe id="iframe" src="https://plouf-plouf.fr/"></iframe>
+                        <div class="hazard">
+                            <input id="plouff" placeholder="écrivez un nombre" type="number">
+                            <button id="ploufbtn" type="button" value="Valider">Valider</button>
+                            <input id="ploufresu" readonly="readonly" placeholder="Resultat">
+                        </div>
+                    </div>
+            </section>
+            <h2>Compteur de caractère</h2>
+            <section class="compteur">
+                
+                
+                    <div id="compteur">
+                        <div class="titre">
+                            <h3>Compteur de carctère</h3>
+                        </div>
+                        <div class="hazard2">
+                            
+                            <textarea id="zoneTexte" id="plouff" placeholder="écrivez du texte"></textarea>
+                            <div id="caractere">0</div>
+                            
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>@RUBYAnthony</p>
+            <div id="heure_exacte"></div>
+            <div id="date_exacte"></div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

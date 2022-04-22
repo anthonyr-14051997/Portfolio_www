@@ -1,0 +1,2 @@
+mettre le main en vh et le reste en = "%"
+mettre uniquement le width et pas le height ou l'inverse

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="index.html" />
+    <meta name="description" content="Voici mon portfolio venez y faire un tour si le développement vous intéresse." />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Voici mon portfolio, je m'appel Anthony RUBY.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!--main css file should not be removed -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <!-- css perso -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- sass -->
+    <!-- <link rel="stylesheet" href="css/main.scss"> -->
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <title>Portfolio : RUBY Anthony</title>
+</head>
+<body>
+
+    
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-secondary gear" data-toggle="modal" data-target="#exampleModal">
+                                            
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 
+                0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 
+                0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 
+                1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 
+                1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 
+                1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 
+                1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 
+                1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 
+                1.873 0 0 0 2.692-1.115l.094-.319z"/>
+        </svg>
+        
+    </button>
+    <!-- modale -->
+                    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Prefers-Params</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body" id="choice">
+                        <h5></h5>
+                        <!-- <p>BOX mode :
+                            <div class="btnbox">
+                                <a href="#" role="button" class="btn popover-test full" title="Popover title" data-content="Popover body content is set in this attribute.">FULL</a>
+                                <a href="#" role="button" class="btn popover-test box" title="Popover title" data-content="Popover body content is set in this attribute.">BOX</a>
+                            </div>
+                        </p> -->
+                        <hr>
+                        <div class="params rounded">
+                            <p>Couleur actuelle : </p>
+                            <div class="act rounded"></div>
+                            <ul>Colors -> 
+                                <li class="btn blue"></li>
+                                <li class="btn vert"></li>
+                                <li class="btn rouge"></li>
+                                <li class="btn white"></li>
+                                <li class="btn base"></li>
+                            </ul>
+                        </div>
+                        <p>Dark mode :
+                            <div class="btndark">
+                                <a href="#" role="button" class="btn btn-secondary dark">DARK</a>
+                                <a href="#" role="button" class="btn btn-default text-dark light">WHITE</a>
+                            </div>
+                        </p>
+                        <ul><span class="colorbase change">Langue</span>
+                            <button id="fr"><li>FR</li></button>
+                            <button id="en"><li>EN</li></button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin de modale -->
+
+    <!--Menubar End-->
+    
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <img class="logo_nav_first" src="images/img_perso/logo-white.svg" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <div id="all">
+                
+            <!--mouse  follower-->
+            <div class="cursor"></div>
+            <!--mouse  follower-->
+            <!--loader-->
+            <div id="loader">
+                <span class="colorbase change">Anthony</span>RUBY 
+            </div>
+            <!--loader-end-->
+            <!--link-screen-->
+            <div id="breaker" class="">
+            </div>
+            <div id="breaker-two" class="">
+            </div>
+            <!--link-screen-->
+            <!--Main-Section-->
+            <!--Navigator-fullscreen-->
+            <div id="navigation-content">
+                
+                <div class="logo">
+                    <img class="logo_nav" src="images/img_perso/logo-white.svg" alt="logo">
+                </div>
+                
+                <div class="navigation-close">
+                    <span class="close-first"></span>
+                    <span class="close-second"></span>
+                </div>
+                
+                <div class="navigation-links">
+                    <a href="#" data-text="HOME" id="home-link" >Accueil</a>
+                    <a href="#" data-text="ABOUT" id="about-link" >A propos</a>
+                    <a href="#" data-text="BLOG" id="blog-link" >BLOG</a>
+                    <a href="#" data-text="LAB" id="lab-link" >LAB</a>
+                    <a href="#" data-text="PROJECTS" id="portfolio-link" >Projets</a>
+                    <a href="#" data-text="CONTACT" id="contact-link" >Contact</a>
+                    
+                </div>
+            </div>
+            <!--Navigator-Fullscreen END-->
+            <!--Home Page-->
+            
+            <!--Header-->
+            <div id="header">
+                
+                <!--Social Media Links-->
+                <div class="social-media-links">
+                    <a href="https://github.com/anthonyr-14051997" target="_blank"><img src="images/img_perso/github.png" class="social-media git" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                    <!-- <a href="#"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a> -->
+                    <a href="https://www.linkedin.com/in/anthony-ruby-315b3422a/" target="_blank"><img src="images/linkedin logo.png" class="social-media link" alt="linkedin-logo"></a>
+                    <!-- <a href="#"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a> -->
+                </div>
+                <!--Social Media Links end-->
+                <div class="header-content">
+                    <div class="header-content-box fr">
+                        <div class="firstline"><span class="colorbase change">Mon </span>nom</div>
+                        <div class="secondline">
+                                est <span class="colorbase change">RUBY Anthony </span> <br>
+                            <span class="txt-rotate" data-period="3000"data-rotate='[ "Développeur web ", " web mobile " ]'></span>
+                            <span class="slash">|</span>
+                        </div>
+                        <div class="contact">
+                            <a href="Mailto:#"><img src="images/mail.png" alt="email-pic" class="contactpic mail_dark"></a><!--Your email Id write in place of "#"-->
+                            <a href="Tel:#"><img src="images/call.png" alt="phone-pic" class="contactpic call_dark"></a><!--Your telephone number Id write in place of "#"-->
+                        </div>    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    <!-- <div class="boxsize"> -->
+
+        <div class="bg"></div>
+        
+        <div id="about">
+
+            <div class="fr">
+                <!-- <hr class="about_hr_horiz"> -->
+                <div id="about-content">
+                    <div class="about-header">
+                        A propos de <span class="colorbase change">moi</span>
+                        <span class ="header-caption">En savoir plus sur <span class="colorbase change"> moi.</span></span>
+                    </div>
+                    <div class="about-main">
+                        <div class="about-first-paragraph wow">
+                            <!--about description-->
+                            <span class="about-first-line">
+                                Je suis un  
+                                <span class="colorbase change">web développeur</span>
+                                créatif
+                                    habitant à miserey-salines, Franche-comté 
+                            </span>
+                
+                            <div class="logs">
+                                <img class="logoabout" src="images/img_perso/logo-white.svg" alt="logo">
+                                
+                            </div>
+                            <!-- <div class="about_hr_vert"></div> -->
+                            <br>
+                            
+                            <span class="about-second-line"> Actuellement en formation de développement, je me suis découvert une passion pour le côté back, toutefois j'apprécie quand même le front à petite dose.</span>
+
+                            <section class="skills">
+                                <h2>SKILLS</h2>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">GIT</div>
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                                </div>
+    
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT</div>
+                                </div>
+    
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">HTML / CSS</div>
+                                </div>
+                            </section>
+
+                            <div class="cv">
+                                <a href="./dwld/cv-fullstack.pdf" download="./dwld/cv-fullstack.pdf"><button class="dwnld">Télécharger mon CV</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog">
+
+            <div class="cards mr-5 row col-md-6 offset-md-3 mb-5 txt-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark blog_title"></h5>
+                    </div>
+                </div>
+                <img class="blog_img" src="" alt="" />
+                <p class="blog_date"></p>
+                <p class="card-text mt-5 blog_descri">
+                </p>
+            </div>
+
+        </div>
+
+        <div id="lab">
+
+            <div class="gallery mx-5 d-flex row">
+                <!-- Portfolio Gallery Grid --> 
+                <div class="col-12">
+                        <div class="contents blake">
+                            <div class="row justify-content-center">
+                                <div class="column">
+                                    <div class="row justify-content-center">
+                                        <h4 class="dark-txt d-flex">Order
+                                            <p class="colorbase change">Card</p>
+                                        </h4>
+                                    </div>
+                                    <img class="content-img ml-5" src="./images/img_perso/cdn7.png" alt="Mountains">  
+                                </div>
+                            </div>
+                            <p class="dark-txt">Ce petit projet concistait à nous faire découvrir les librairies css, 
+                                une maquette nous as été donné et à l'aide de librairies css nous devions reproduire cette maquette.</p>
+                        </div>
+                        <div class="contents blake">
+                            <div class="row justify-content-center">
+                                <div class="column">
+                                    <div class="row justify-content-center">
+                                        <h4 class="dark-txt d-flex">Form
+                                            <p class="colorbase change">ulaire</p>
+                                        </h4>
+                                    </div>
+                                    <img class="content-img ml-5" src="./images/img_perso/cdn4.png" alt="Lights">
+                                </div>
+                            </div>
+                            <p class="dark-txt">Celui-ci, concistait à nous faire découvrir l'ajax par l'intermédiaire d'un formulaire de contact grâce auquel nous pouvons recevoir 
+                                un mail ce qui refresh les zonnes de textes sans refresh lapage entière.</p>
+                        </div>
+                        <div class="contents blake">
+                            <div class="row justify-content-center">
+                                <div class="column">
+                                    <div class="row justify-content-center">
+                                        <h4 class="dark-txt d-flex">S
+                                            <p class="colorbase change">q</p>
+                                            l
+                                        </h4>
+                                    </div>
+                                    <img class="content-img" src="./images/img_perso/sql.png" alt="Nature">
+                                </div>
+                            </div>
+                            <p class="dark-txt">Celui-la, concistait à nous faire comprendre comment fonctionnait les liaisons entre un site web et une base de données.</p>
+                        </div>
+
+                    <!-- <div class="mx-5">
+                        <div class="contents">
+                            <img class="rounded" src="./images/img_perso/cdn7.png" alt="Nature" style="width:100%">
+                            <h4 class="text-light">Forest</h4>
+                            <p class="text-light">Lorem ipsum dolor..</p>
+                        </div>
+                    </div> -->
+
+                    <!-- END GRID -->
+                </div>
+            </div>
+            
+
+            <!-- <div class="cards">
+                <div class="card">
+                    <img class="card-img-top" src="" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <div id="portfolio">
+            
+            <section class="projet mt-5">
+
+                <!-- carousel design -->
+
+                <div class="cardse">
+                    <ul>
+                        <li>
+                            <div class="col-md-9 offset-md-3 blake">
+                                <a class="lien mx-5 col-md-6" href="https://anthonyr.promo-106.codeur.online/saiko_no_sushi/index.php" target="_blank" style="cursor: pointer;">
+                                    <div class="carde">
+                                        <div class="card__image">
+                                            <div class="card__image--inner card_img_1"><!-- style="background-image: url('../images/img_perso/cdn3.png');" --><img src="./images/img_perso/sushi2.png" alt="" srcset=""></div>
+                                            <div class="card__image--inner card_img_2"><!-- style="background-image: url('../images/img_perso/cdn3.png');" --><img src="./images/img_perso/cdn3.png" alt="" srcset=""></div>
+                                            <div class="card__image--inner card_img_3"><!-- style="background-image: url('../images/img_perso/cdn3.png');" --><img src="./images/img_perso/sushi.png" alt="" srcset=""></div>
+                                        </div>
+                                        <div class="card__text w-20">
+                                            <span class="card__text--inner bg-dark colorbase change">SAIKO NO SUSHI</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="row txt-card">
+                                    
+                                    <p class="col-md-12 text-justify">Ce projet conciste à réaliser un site vitrine d'un restaurant, pour le thème j'ai choisis de voyager au 
+                                        Japons avec un restaurant axé sur les sushis. Entièrement modulable grâce à un backoffice 
+                                        relié à une base de données, je peux ajouter, modifier, supprimer des produits, des menus et les éléments dans les favoris.
+                                    </p>
+                                </div>
+                                <a href="https://github.com/anthonyr-14051997/site_restaurant" target="_blank">Lien github du projet</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-md-9 offset-md-3 blake">
+                                <a class="lien col-md-6" href="./projet/github/index.html" target="_blank" style="cursor: pointer;">
+                                    <div class="carde">
+                                        <div class="card__image">
+                                            <div class="card__image--inner card_img_1"><!--  style="background-image: url('../images/img_perso/cdn6.png');" --><img src="./images/img_perso/cdn6.png" alt="" srcset=""></div>
+                                            <div class="card__image--inner card_img_2"><!--  style="background-image: url('../images/img_perso/cdn6.png');" --><img src="./images/img_perso/cdn6.png" alt="" srcset=""></div>
+                                            <div class="card__image--inner card_img_3"><!--  style="background-image: url('../images/img_perso/cdn6.png');" --><img src="./images/img_perso/cdn6.png" alt="" srcset=""></div>
+                                        </div>
+                                        <div class="card__text w-20">
+                                            <span class="card__text--inner bg-dark colorbase change">API GITHUB</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="row txt-card">
+                                    
+                                    <p class="col-md-12 text-justify">Ce projet la conciste à reproduire une interface de recherche 
+                                        d'utilisateur github, qui recherche les informations grâce à l'api de github.
+                                        A l'aide d'une maquette j'ai réalisé l'intégrations pour ensuite lié l'api github avec l'interface,
+                                         grâce à l'ajax, au php et un peu de css. On croiraît un vrai widget GitHub.
+                                    </p>
+                                </div>
+                                <a href="https://github.com/anthonyr-14051997/gitapi" target="_blank">Lien github du projet</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-md-9 offset-md-3 blake">
+                                <a class="lien col-md-6" href="./projet/site_widget/index.html" target="_blank" style="cursor: pointer;">
+                                    <div class="carde">
+                                        <div class="card__image">
+                                            <div class="card__image--inner card_img_1"><!--  style="background-image: url('../images/img_perso/cdn8.png');" --><img src="./images/img_perso/cdn8.png" alt="" srcset=""></div>
+                                            <div class="card__image--inner card_img_2"><!--  style="background-image: url('../images/img_perso/cdn8.png');" --><img src="./images/img_perso/cdn8.1.png" alt="" srcset=""></div>
+                                            <div class="card__image--inner card_img_3"><!--  style="background-image: url('../images/img_perso/cdn8.png');" --><img src="./images/img_perso/cdn8.2.png" alt="" srcset=""></div>
+                                        </div>
+                                        <div class="card__text w-20">
+                                            <span class="card__text--inner bg-dark colorbase change">SITE WIDGET</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="row txt-card">
+                                    
+                                    <p class="col-md-12 text-justify">Ce projet est un des premiers, il conciste à créer des widgets tel 
+                                        qu'un widget météo qui nous indique le temps à la ville recherché, une calculette, le jeu du plouf plouf... 
+                                        il comporte ces widget-si ainsi que bien d'autres. Conçut uniquement grâce à html, css, js 
+                                        la tache était rude surtout en debut de formation.
+                                    </p>
+                                </div>
+                                <a href="https://github.com/anthonyr-14051997/site-widget" target="_blank" style="cursor: pointer;">Lien github du projet</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- fin du carousel design -->
+            </section>
+            
+            <div style="display: none;" class="loading__wrapper">
+                <div class="loader__text">Loading...</div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="fr container d-flex">
+                <section class="mb-4 contact-class">
+
+                    <!--Section heading-->
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contactez moi</h2>
+                    <!--Section description-->
+                    <p class="text-center w-responsive mx-auto mb-5">Si vous avez une question n'hésitez pas à me contacter, je me ferait un plaisir de vous répondre très rapidement.</p>
+                
+                    <div class="">
+                
+                        <!--Grid column-->
+                        <div class="text-left">
+                            <form class="row justify-content-start col col-md-12" id="contact-form" name="contact-form"  method="POST"><!-- action="./php/mail.php" -->
+                
+                                <!--Grid row-->
+                                <div class="d-flex col col-md-12">
+                
+                                    <!--Grid column-->
+                                    <div class="col col-md-6">
+                                        <div class="input_name">
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Votre nom</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                
+                                    <!--Grid column-->
+                                    <div class="col col-md-6">
+                                        <div class="input_mail">
+                                            <input type="text" id="email" name="email" class="form-control">
+                                            <label for="email" class="">Votre mail</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                
+                                </div>
+                                <!--Grid row-->
+                
+                                <!--Grid row-->
+                                <div class="col col-md-12">
+                                    <div class="">
+                                        <div class="input_sujet">
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                            <label for="subject" class="">Sujet</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+                
+                                <!--Grid row-->
+                                <div class="col col-md-12">
+                
+                                    <!--Grid column-->
+                                    <div class="">
+                
+                                        <div class="md-form input_msg">
+                                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                            <label for="message">Votre message</label>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+                
+                            </form>
+        
+                        </div>
+                        <!--Grid column-->
+
+                        <div class="text-center text-md col col-md-3">
+                            <button class="btn dark-txt send_contact" type="submit">Envoyer</button>
+                            <!-- <a class="btn dark-txt send_contact" onclick="document.getElementById('contact-form').submit();" onclick="validateForm();">Envoyer</a> -->
+                            <!-- <a class="btn dark-txt send_contact" onclick="validateForm();">Send</a> -->
+                        </div>
+                        <div class="status"></div>
+
+                        <!--Grid column-->
+                        <div class="text-center mx-5 mb-5">
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                    <p>Miserey-Salines, Franche-comté</p>
+                                </li>
+                
+                                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                    <p>06.11.28.90.31</p>
+                                </li>
+                
+                                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                    <p>aruby9905@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                
+                    </div>
+                
+                </section>
+            </div>
+            
+        </div>
+        
+    <!-- </div> -->
+    
+
+    <!-- cdn anime.js -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
+    <!--all the divisions-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- bootstrap 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- cdn gsap -->
+    <!-- <script src="/test/gsap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" 
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- cdn gsap scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html><!-- MKCX*975+++  -->
