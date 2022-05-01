@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anthonyr.promo-106.codeur.online/portfolio_www/sitemap.xml

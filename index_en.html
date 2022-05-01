@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="canonical" href="index.html" />
@@ -9,7 +8,7 @@
     <meta name="description" content="Voici mon portfolio je m'appele Anthony RUBY, venez y faire un tour si le développement vous intéresse." />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="rQTFm89w8Yx2cTSu0tdTvEJ9T1jx1d4L1yyfkB76CFo" />
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- bootstrap 4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -23,14 +22,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 
     <title>Portfolio : RUBY Anthony</title>
-
 </head>
 <body>
 
     
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-secondary gear" aria-label="preference" data-toggle="modal" data-target="#exampleModal">
+    <button type="button" class="btn btn-secondary gear" data-toggle="modal" data-target="#exampleModal">
                                             
         <svg xmlns="https://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
             <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
@@ -69,7 +67,7 @@
                         </p> -->
                         <hr>
                         <div class="params rounded">
-                            <p>Couleur actuelle : </p>
+                            <p>Actually color : </p>
                             <div class="act rounded"></div>
                             <ul>Colors -> 
                                 <li class="btn blue"></li>
@@ -136,14 +134,14 @@
             </div>
             
             <div class="navigation-links">
-                <a href="#" data-text="HOME" id="home-link" >Accueil</a>
-                <a href="#" data-text="ABOUT" id="about-link" >A propos</a>
+                <a href="#" data-text="HOME" id="home-link" >HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
                 <a href="#" data-text="BLOG" id="blog-link" >BLOG</a>
                 <a href="#" data-text="LAB" id="lab-link" >LAB</a>
-                <a href="#" data-text="PROJECTS" id="portfolio-link" >Projets</a>
-                <a href="#" data-text="CONTACT" id="contact-link" >Contact</a>
+                <a href="#" data-text="PROJECTS" id="portfolio-link" >PROJECTS</a>
+                <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
                 
-            </div> 
+            </div>
             
         </div>
         
@@ -155,18 +153,18 @@
             
             <!--Social Media Links-->
             <div class="social-media-links">
-                <a href="https://github.com/anthonyr-14051997" target="_blank"><img src="images/img_perso/github.svg" class="social-media git" alt="github logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                <a href="https://github.com/anthonyr-14051997" target="_blank"><img src="images/img_perso/github.svg" class="social-media git" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
                 <!-- <a href="#"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a> -->
                 <a href="https://www.linkedin.com/in/anthony-ruby-315b3422a/" target="_blank"><img src="images/linkedin logo.svg" class="social-media link" alt="linkedin-logo"></a>
                 <!-- <a href="#"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a> -->
             </div>
             <!--Social Media Links end-->
             <div class="header-content">
-                <div class="header-content-box fr">
-                    <div class="firstline"><span class="colorbase change">Mon </span>nom</div>
+                <div class="header-content-box">
+                    <div class="firstline"><span class="colorbase change">My </span>name</div>
                     <div class="secondline">
-                            est <span class="colorbase change">RUBY Anthony </span> <br>
-                        <span class="txt-rotate" data-period="3000"data-rotate='[ "Développeur web ", " web mobile " ]'></span>
+                            is <span class="colorbase change">RUBY Anthony </span> <br>
+                        <span class="txt-rotate" data-period="3000"data-rotate='[ " web developeur ", " web mobile " ]'></span>
                         <span class="slash">|</span>
                     </div>
                     <div class="contact">
@@ -180,7 +178,7 @@
         </div>
     </div>
 
-    <!--Menubar End-->
+    <div class="en">
 
         <div class="bg"></div>
         
@@ -190,60 +188,62 @@
                 <svg height="60" width="500" >
                   <rect class="shape1" height="60" width="500" />
                   <rect class="shape2" height="60" width="500" />
-                  <div class="text"><h2 class="title_page">A propos</h2></div>
+                  <div class="text"><h2 class="title_page">ABOUT</h2></div>
                 </svg>
             </div>
-            
-            <!-- <hr class="about_hr_horiz"> -->
-            <div id="about-content">
-                <div class="about-header">
-                    A propos de <span class="colorbase change">moi</span>
-                    <span class ="header-caption">En savoir plus sur <span class="colorbase change"> moi.</span></span>
-                </div>
-                <div class="about-main">
-                    <div class="about-first-paragraph wow">
-                        <!--about description-->
-                        <span class="about-first-line">
-                            Je suis un  
-                            <span class="colorbase change">web développeur</span>
-                            créatif
-                                habitant à miserey-salines, Franche-comté 
-                        </span>
-            
-                        <div class="logs">
-                            <img class="logoabout" src="images/img_perso/logo-white.svg" alt="logo">
+
+            <div class="">
+                <!-- <hr class="about_hr_horiz"> -->
+                <div id="about-content">
+                    <div class="about-header">
+                        About <span class="colorbase change">me</span>
+                        <span class ="header-caption">More than <span class="colorbase change"> me</span></span>
+                    </div>
+                    <div class="about-main">
+                        <div class="about-first-paragraph wow">
+                            <!--about description-->
+                            <span class="about-first-line">
+                                I'm  
+                                <span class="colorbase change">web developeur</span>
+                                creative
+                                    living at miserey-salines, Franche-comté 
+                            </span>
+                
+                            <div class="logs">
+                                <img class="logoabout" src="images/img_perso/logo-white.svg" alt="logo">
+                                
+                            </div>
+                            <!-- <div class="about_hr_vert"></div> -->
+                            <br>
                             
-                        </div>
-                        <!-- <div class="about_hr_vert"></div> -->
-                        <br>
-                        
-                        <span class="about-second-line"> Actuellement en formation de développement, je me suis découvert une passion pour le côté back, toutefois j'apprécie quand même le front à petite dose.</span>
+                            <span class="about-second-line">Currently in development training, I discovered a passion for the back side, however I still appreciate the front side in small doses.</span>
 
-                        <section class="skills">
-                            <h2>SKILLS</h2>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">MYSQL</div>
+                            <section class="skills">
+                                <h2>SKILLS</h2>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">MYSQL</div>
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">GIT</div>
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                                </div>
+    
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT</div>
+                                </div>
+    
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">HTML / CSS</div>
+                                </div>
+                            </section>
+
+                            <div class="cv">
+                                <a href="./dwld/cv-fullstack.pdf" download="./dwld/cv-fullstack.pdf"><button class="dwnld">Download CV</button></a>
                             </div>
-
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">GIT</div>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">PHP</div>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT</div>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">HTML / CSS</div>
-                            </div>
-                        </section>
-
-                        <div class="cv">
-                            <a href="./dwld/cv-fullstack.pdf" download="./dwld/cv-fullstack.pdf"><button class="dwnld">Télécharger mon CV</button></a>
                         </div>
                     </div>
                 </div>
@@ -264,6 +264,18 @@
                 
             </div>
 
+            <div class="cards mr-5 row col-md-6 offset-md-3 mb-5 txt-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark blog_title"></h5>
+                    </div>
+                </div>
+                <img class="blog_img" src="" alt="" />
+                <p class="blog_date"></p>
+                <p class="card-text mt-5 blog_descri">
+                </p>
+            </div>
+
         </div>
 
         <div id="lab">
@@ -275,19 +287,18 @@
                   <div class="text"><h2 class="title_page">LAB</h2></div>
                 </svg>
             </div>
-            
 
             <div class="gallery mx-5 d-flex row">
                 <!-- Portfolio Gallery Grid --> 
                 <div class="col-12">
                         <div class="blake">
+
                             <div class="border_1"></div>
                             <div class="border_2"></div>
                             <div class="border_3"></div>
                             <div class="border_4"></div>
-                            
+
                             <div class="contents">
-                                
                                 <div class="row justify-content-center can">
                                     <img class="logo_html logos" src="./images/img_perso/img_technos/html.png" alt="Logo html">
                                     <img class="logo_sass logos" src="./images/img_perso/img_technos/sass.png" alt="Logo sass">
@@ -297,25 +308,25 @@
                                                 <p class="colorbase change">Card</p>
                                             </h4>
                                         </div>
-                                        <a class="lab_link" href="./projet/order_card" target="_blank"><img class="content-img ml-5" src="./images/img_perso/cdn7.png" alt="Image du projet order card"></a>
+                                        <a class="lab_link" href="./projet/order_card" target="_blank"><img class="content-img ml-5" src="./images/img_perso/cdn7.png" alt="Image of project order card"></a>
                                           
                                     </div>
                                     <img class="logo_css logos" src="./images/img_perso/img_technos/css.png" alt="Logo css">
                                     <img class="logo_sass logos" src="./images/img_perso/img_technos/ubuntu.png" alt="Logo ubuntu">
                                 </div>
-                                <p class="lab_text dark-txt">Ce petit projet concistait à nous faire découvrir les librairies css, 
-                                    une maquette nous as été donné et à l'aide de librairies css nous devions reproduire cette maquette.</p>
+                                <p class="dark-txt lab_text">This small project consisted in making us discover the css libraries,
+                                    a model was given to us and using css libraries we had to reproduce this model.</p>
                             </div>
                         </div>
                         
                         <div class="blake">
+
                             <div class="border_1"></div>
                             <div class="border_2"></div>
                             <div class="border_3"></div>
                             <div class="border_4"></div>
 
                             <div class="contents">
-                            
                                 <div class="row justify-content-center can">
                                     <img class="logo_html logos" src="./images/img_perso/img_technos/html.png" alt="Logo html">
                                     <img class="logo_css logos" src="./images/img_perso/img_technos/css.png" alt="Logo css">
@@ -325,25 +336,25 @@
                                                 <p class="colorbase change">ulaire</p>
                                             </h4>
                                         </div>
-                                        <a class="lab_link" href="https://anthonyr.promo-106.codeur.online/form-group/" target="_blank"><img class="content-img ml-5" src="./images/img_perso/cdn4.png" alt="Image du projet formulaire"></a>
+                                        <a class="lab_link" href="https://anthonyr.promo-106.codeur.online/form-group/" target="_blank"><img class="content-img ml-5" src="./images/img_perso/cdn4.png" alt="Image of project formulaire"></a>
                                         
                                     </div>
                                     <img class="logo_js logos" src="./images/img_perso/img_technos/js.png" alt="Logo js">
                                     <img class="logo_php logos" src="./images/img_perso/img_technos/php.png" alt="Logo php">
                                 </div>
-                                <p class="dark-txt lab_text">Celui-ci, concistait à nous faire découvrir l'ajax par l'intermédiaire d'un formulaire de contact grâce auquel nous pouvons recevoir 
-                                    un mail ce qui refresh les zonnes de textes sans refresh lapage entière.</p>
+                                <p class="dark-txt lab_text">
+                                    This one consisted in introducing us to ajax through a contact form through which we can receive
+                                                                    an email which refreshes the text areas without refreshing the entire page.</p>
                             </div>
                         </div>
-                        
                         <div class="blake">
+
                             <div class="border_1"></div>
                             <div class="border_2"></div>
                             <div class="border_3"></div>
                             <div class="border_4"></div>
 
                             <div class="contents">
-                                
                                 <div class="row justify-content-center can">
                                     <img class="logo_php logos" src="./images/img_perso/img_technos/php.png" alt="Logo php">
                                     <div class="column">
@@ -353,14 +364,15 @@
                                                 l
                                             </h4>
                                         </div>
-                                        <a class="lab_link" href="https://anthonyr.promo-106.codeur.online/mysql/sqlphp/test.php" target="_blank"><img class="content-img" src="./images/img_perso/sql.png" alt="Image du projet Sql"></a>
+                                        <a class="lab_link" href="https://anthonyr.promo-106.codeur.online/mysql/sqlphp/test.php" target="_blank"><img class="content-img" src="./images/img_perso/sql.png" alt="Image of project Sql"></a>
                                         
                                     </div>
                                     <img class="logo_sql logos" src="./images/img_perso/img_technos/sql.png" alt="Logo mysql">
                                 </div>
-                                <p class="lab_text dark-txt">Celui-la, concistait à nous faire comprendre comment fonctionnait les liaisons entre un site web et une base de données.</p>
+                                <p class="dark-txt lab_text">This one was to help us understand how the links between a website and a database worked.</p>
                             </div>
                         </div>
+                        
 
                     <!-- <div class="mx-5">
                         <div class="contents">
@@ -393,19 +405,19 @@
                 <svg height="60" width="500" >
                   <rect class="shape1" height="60" width="500" />
                   <rect class="shape2" height="60" width="500" />
-                  <div class="text"><h2 class="title_page">PROJETS</h2></div>
+                  <div class="text"><h2 class="title_page">PROJECTS</h2></div>
                 </svg>
             </div>
-            
             
             <section class="projet mt-5">
 
                 <!-- carousel design -->
 
-                <div class="cardse proj">
+                <div class="cardse">
                     <ul>
                         <li>
                             <div class="blake">
+
                                 <div class="border_1"></div>
                                 <div class="border_2"></div>
                                 <div class="border_3"></div>
@@ -419,21 +431,21 @@
                                                     <span class="card__text--inner bg-dark colorbase change">SAIKO NO SUSHI</span>
                                                 </div>
                                                 <div class="card__image">
-                                                    <div class="card__image--inner card_img_1"><!-- style="background-image: url('../images/img_perso/cdn3.png');" --><img src="./images/img_perso/sushi2.png" alt="image du site : saiko no sushi"></div>
-                                                    <div class="card__image--inner card_img_2"><!-- style="background-image: url('../images/img_perso/cdn3.png');" --><img src="./images/img_perso/cdn3.png" alt="image du site : saiko no sushi"></div>
-                                                    <div class="card__image--inner card_img_3"><!-- style="background-image: url('../images/img_perso/cdn3.png');" --><img src="./images/img_perso/sushi.png" alt="image du site : saiko no sushi"></div>
+                                                    <div class="card__image--inner card_img_1"><!-- style="background-image: url('../images/img_perso/cdn3.png');" --><img src="./images/img_perso/sushi2.png" alt="image of website : saiko no sushi"></div>
+                                                    <div class="card__image--inner card_img_2"><!-- style="background-image: url('../images/img_perso/cdn3.png');" --><img src="./images/img_perso/cdn3.png" alt="image of website : saiko no sushi"></div>
+                                                    <div class="card__image--inner card_img_3"><!-- style="background-image: url('../images/img_perso/cdn3.png');" --><img src="./images/img_perso/sushi.png" alt="image of website : saiko no sushi"></div>
                                                 </div>
                                                 
                                             </div>
                                         </a>
                                         <div class="row txt-card">
                                             
-                                            <p class="col-md-12 text-justify flotte1">Ce projet conciste à réaliser un site vitrine d'un restaurant, pour le thème j'ai choisis de voyager au 
-                                                Japons avec un restaurant axé sur les sushis. Entièrement modulable grâce à un backoffice 
-                                                relié à une base de données, je peux ajouter, modifier, supprimer des produits, des menus et les éléments dans les favoris.
+                                            <p class="col-md-12 text-justify">This project consists of creating a showcase site for a restaurant, for the theme I have chosen to travel to
+                                                Japons with a restaurant focused on sushi. Fully modular thanks to a backoffice
+                                                connected to a database, I can add, modify, delete products, menus and items in favorites.
                                             </p>
                                         </div>
-                                        <a class="cardse--link" href="https://github.com/anthonyr-14051997/site_restaurant" target="_blank">Lien github du projet</a>
+                                        <a class="cardse--link" href="https://github.com/anthonyr-14051997/site_restaurant" target="_blank">github link</a>
                                     </div>
                                     
                                 </div>
@@ -442,6 +454,7 @@
                         </li>
                         <li>
                             <div class="blake">
+
                                 <div class="border_1"></div>
                                 <div class="border_2"></div>
                                 <div class="border_3"></div>
@@ -455,22 +468,22 @@
                                                     <span class="card__text--inner bg-dark colorbase change">API GITHUB</span>
                                                 </div>
                                                 <div class="card__image">
-                                                    <div class="card__image--inner card_img_1"><!--  style="background-image: url('../images/img_perso/cdn6.png');" --><img src="./images/img_perso/cdn6.png" alt="image du site : Api github"></div>
-                                                    <div class="card__image--inner card_img_2"><!--  style="background-image: url('../images/img_perso/cdn6.png');" --><img src="./images/img_perso/cdn6.png" alt="image du site : Api github"></div>
-                                                    <div class="card__image--inner card_img_3"><!--  style="background-image: url('../images/img_perso/cdn6.png');" --><img src="./images/img_perso/cdn6.png" alt="image du site : Api github"></div>
+                                                    <div class="card__image--inner card_img_1"><!--  style="background-image: url('../images/img_perso/cdn6.png');" --><img src="./images/img_perso/cdn6.png" alt="image of website : Api github"></div>
+                                                    <div class="card__image--inner card_img_2"><!--  style="background-image: url('../images/img_perso/cdn6.png');" --><img src="./images/img_perso/cdn6.png" alt="image of website : Api github"></div>
+                                                    <div class="card__image--inner card_img_3"><!--  style="background-image: url('../images/img_perso/cdn6.png');" --><img src="./images/img_perso/cdn6.png" alt="image of website : Api github"></div>
                                                 </div>
                                                 
                                             </div>
                                         </a>
                                         <div class="row txt-card">
                                             
-                                            <p class="col-md-12 text-justify">Ce projet la conciste à reproduire une interface de recherche 
-                                                d'utilisateur github, qui recherche les informations grâce à l'api de github.
-                                                A l'aide d'une maquette j'ai réalisé l'intégrations pour ensuite lié l'api github avec l'interface,
-                                                 grâce à l'ajax, au php et un peu de css. On croiraît un vrai widget GitHub.
+                                            <p class="col-md-12 text-justify">This project consists of reproducing a search interface
+                                                github user, which searches for information using the github api.
+                                                Using a model I made the integrations and then linked the github api with the interface,
+                                                 thanks to ajax, php and a bit of css. It looks like a real GitHub widget.
                                             </p>
                                         </div>
-                                        <a class="cardse--link" href="https://github.com/anthonyr-14051997/gitapi" target="_blank">Lien github du projet</a>
+                                        <a class="cardse--link" href="https://github.com/anthonyr-14051997/gitapi" target="_blank">github link</a>
                                     </div>
                                     
                                 </div>
@@ -479,6 +492,7 @@
                         </li>
                         <li>
                             <div class="blake">
+
                                 <div class="border_1"></div>
                                 <div class="border_2"></div>
                                 <div class="border_3"></div>
@@ -492,22 +506,22 @@
                                                     <span class="card__text--inner bg-dark colorbase change">SITE WIDGET</span>
                                                 </div>
                                                 <div class="card__image">
-                                                    <div class="card__image--inner card_img_1"><!--  style="background-image: url('../images/img_perso/cdn8.png');" --><img src="./images/img_perso/cdn8.png" alt="image du site : Site widget"></div>
-                                                    <div class="card__image--inner card_img_2"><!--  style="background-image: url('../images/img_perso/cdn8.png');" --><img src="./images/img_perso/cdn8.1.png" alt="image du site : Site widget"></div>
-                                                    <div class="card__image--inner card_img_3"><!--  style="background-image: url('../images/img_perso/cdn8.png');" --><img src="./images/img_perso/cdn8.2.png" alt="image du site : Site widget"></div>
+                                                    <div class="card__image--inner card_img_1"><!--  style="background-image: url('../images/img_perso/cdn8.png');" --><img src="./images/img_perso/cdn8.png" alt="image of website : Site widget"></div>
+                                                    <div class="card__image--inner card_img_2"><!--  style="background-image: url('../images/img_perso/cdn8.png');" --><img src="./images/img_perso/cdn8.1.png" alt="image of website : Site widget"></div>
+                                                    <div class="card__image--inner card_img_3"><!--  style="background-image: url('../images/img_perso/cdn8.png');" --><img src="./images/img_perso/cdn8.2.png" alt="image of website : Site widget"></div>
                                                 </div>
                                                 
                                             </div>
                                         </a>
                                         <div class="row txt-card">
                                             
-                                            <p class="col-md-12 text-justify">Ce projet est un des premiers, il conciste à créer des widgets tel 
-                                                qu'un widget météo qui nous indique le temps à la ville recherché, une calculette, le jeu du plouf plouf... 
-                                                il comporte ces widget-si ainsi que bien d'autres. Conçut uniquement grâce à html, css, js 
-                                                la tache était rude surtout en debut de formation.
+                                            <p class="col-md-12 text-justify">This project is one of the first, it consists in creating widgets such
+                                                a weather widget that tells us the weather in the city we are looking for, a calculator, the splash splash game...
+                                                it features these widget-si as well as many others. Designed only with html, css, js
+                                                the task was tough, especially at the beginning of training.
                                             </p>
                                         </div>
-                                        <a class="cardse--link" href="https://github.com/anthonyr-14051997/site-widget" target="_blank" style="cursor: pointer;">Lien github du projet</a>
+                                        <a class="cardse--link" href="https://github.com/anthonyr-14051997/site-widget" target="_blank" style="cursor: pointer;">github link</a>
                                     </div>
                                     
                                 </div>
@@ -530,24 +544,24 @@
                 <section class="mb-4 contact-class">
 
                     <!--Section heading-->
-                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contactez moi</h2>
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
                     <!--Section description-->
-                    <p class="text-center w-responsive mx-auto mb-5">Si vous avez une question n'hésitez pas à me contacter, je me ferait un plaisir de vous répondre très rapidement.</p>
+                    <p class="text-center w-responsive mx-auto mb-5">If you have a question do not hesitate to contact me, I would be happy to answer you very quickly.</p>
                 
                     <div class="">
                 
                         <!--Grid column-->
                         <div class="text-left">
-                            <form method="POST" class="row justify-content-start col col-md-12" id="contact-form" name="contact-forms" required><!-- action="./php/mail.php" -->
+                            <form class="row justify-content-start col col-md-12" id="contact-form" name="contact-form"  method="POST"><!-- action="./php/mail.php" -->
                 
                                 <!--Grid row-->
-                                <div class="d-flex col col-md-12 mail_nom">
+                                <div class="d-flex col col-md-12">
                 
                                     <!--Grid column-->
                                     <div class="col col-md-6">
                                         <div class="input_name">
-                                            <input type="text" name="name_form" id="name" class="form-control" pattern="^[a-zA-Z \-,.()]*$" aria-required="true" required>
-                                            <label for="name" class="">Votre nom</label>
+                                            <input type="text" id="name" name="name_form" class="form-control" pattern="^[a-zA-Z \-,.()]*$" aria-required="true" required>
+                                            <label for="name" class="">Your name</label>
                                         </div>
                                     </div>
                                     <!--Grid column-->
@@ -555,8 +569,8 @@
                                     <!--Grid column-->
                                     <div class="col col-md-6">
                                         <div class="input_mail">
-                                            <input type="text" name="email_form" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-required="true" required>
-                                            <label for="email" class="">Votre mail</label>
+                                            <input type="text" id="email" name="email_form" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-required="true" required>
+                                            <label for="email" class="">Your email</label>
                                         </div>
                                     </div>
                                     <!--Grid column-->
@@ -568,8 +582,8 @@
                                 <div class="col col-md-12">
                                     <div class="">
                                         <div class="input_sujet">
-                                            <input type="text" name="subject_form" id="subject" class="form-control" pattern="^[a-zA-Z \-,.()]*$" aria-required="true" required>
-                                            <label for="subject" class="">Sujet</label>
+                                            <input type="text" id="subject" name="subject_form" class="form-control" pattern="^[a-zA-Z \-,.()]*$" aria-required="true" required>
+                                            <label for="subject" class="">Subject</label>
                                         </div>
                                     </div>
                                 </div>
@@ -582,8 +596,8 @@
                                     <div class="">
                 
                                         <div class="md-form input_msg">
-                                            <textarea type="text" name="message_form" id="message" rows="2" class="form-control md-textarea" pattern="^[a-zA-Z \-,.()]*$" aria-required="true" required></textarea>
-                                            <label for="message">Votre message</label>
+                                            <textarea type="text" id="message" name="message_form" rows="2" class="form-control md-textarea" pattern="^[a-zA-Z \-,.()]*$" aria-required="true" required></textarea>
+                                            <label for="message">Your message</label>
                                         </div>
                 
                                     </div>
@@ -591,7 +605,9 @@
                                 <!--Grid row-->
 
                                 <div class="text-center text-md col col-ml-3">
-                                    <button class="btn dark-txt send_contact" type="submit" name="submit">Envoyer</button>
+                                    <button class="btn dark-txt send_contact" type="submit">Send</button>
+                                    <!-- <a class="btn dark-txt send_contact" onclick="document.getElementById('contact-form').submit();" onclick="validateForm();">Envoyer</a> -->
+                                    <!-- <a class="btn dark-txt send_contact" onclick="validateForm();">Send</a> -->
                                 </div>
                 
                             </form>
@@ -604,15 +620,15 @@
                         <!--Grid column-->
                         <div class="text-center mx-5 mb-5 info_perso">
                             <ul class="list-unstyled mb-0">
-                                <li><i class="fas fa-map-marker-alt fa-2x">
+                                <li><i class="fas fa-map-marker-alt fa-2x"></i>
                                     <p class="info_perso"><a href="https://www.google.fr/maps/place/7+Rue+des+Acacias,+25480+Miserey-Salines/@47.2830036,5.9725713,17z/data=!3m1!4b1!4m5!3m4!1s0x478d62103cf07e7b:0x14746e42396d1a10!8m2!3d47.283!4d5.97476" target="_blank">Miserey-Salines, Franche-comté</a></p>
                                 </li>
                 
-                                <li><i class="fas fa-phone mt-4 fa-2x">
+                                <li><i class="fas fa-phone mt-4 fa-2x"></i>
                                     <p class="info_perso"><a href="tel:+33611289031">06 11 28 90 31</a></p>
                                 </li>
                 
-                                <li><i class="fas fa-envelope mt-4 fa-2x">
+                                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
                                     <p class="info_perso"><a href="mailto:aruby9905@gmail.com" target="blank_">aruby9905@gmail.com</a></p>
                                 </li>
                             </ul>
@@ -620,15 +636,16 @@
                         <!--Grid column-->
                 
                     </div>
-                    <p class="mention">©RUBY.Anthony, <a href="./index_mention-legal.html">mention légales</a></p>
+
+                    <p class="mention">©RUBY.Anthony, <a href="./index_mention-legal.html">legal mention</a></p>
+                
                 </section>
             </div>
             
         </div>
         
+    
     </div>
-    
-    
 
     <!-- cdn anime.js -->
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>

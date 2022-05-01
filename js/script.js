@@ -1,9 +1,6 @@
 let btnfr = document.querySelector('#fr');
 let btnen = document.querySelector('#en');
 
-let fr = document.querySelectorAll('.fr');
-let en = document.querySelectorAll('.en');
-
 let card = document.querySelectorAll('.card__image--inner');
 
 /* fin anime.js */
@@ -71,89 +68,14 @@ const logo_nav = document.querySelector('.logo_nav');
 const logo_about = document.querySelector('.logoabout');
 const logo_nav_first = document.querySelector('.logo_nav_first');
 
-/* let btnfull = document.querySelector('.full');
-let btnbox = document.querySelector('.box');
-let boxsize = document.querySelector('.boxsize'); */
-
 btnfr.addEventListener('click', function() {
-        langue(this.id)
+        window.location = "../portfolio_www/index.html"
 });
 btnen.addEventListener('click', function() {
-        langue(this.id)
+        window.location = "../portfolio_www/index_en.html"
 });
-
-function langue(id) {
-        console.log('cc');
-        console.log(id);
-        if (id == "en") {
-                console.log('cc1');
-                fr.forEach(element => {
-                        element.style.display = "none";
-                });
-                en.forEach(element => {
-                        element.style.display = "block";
-                });
-
-        } else if (id == "fr") {
-                console.log('cc2');
-                fr.forEach(element => {
-                        element.style.display = "block";
-                });
-                en.forEach(element => {
-                        element.style.display = "none";
-                });
-        } else {
-                console.log('cc3');
-                fr.forEach(element => {
-                        element.style.display = "block";
-                });
-                en.forEach(element => {
-                        element.style.display = "none";
-                });
-        }
-}
-
-langue();
 
 /* anime.js */
-
-/* btn langue */
-
-btnfr.addEventListener('click', () => {
-        animfr.play();
-        btnen.style.background = "whitesmoke";
-})
-btnen.addEventListener('click', () => {
-        animen.play();
-        btnfr.style.background = "whitesmoke";
-})
-
-let animfr = anime({
-        targets: '#fr',
-        autoplay: false,
-        width: {
-                value: ['-=20px', '+=20px']
-        },
-        rotate: {
-                value: '+=2turn'
-        },
-        duration: 1800,
-        easing: 'easeInOutSine',
-        background: 'rgb(0, 252, 168)'
-});
-let animen = anime({
-        targets: '#en',
-        autoplay: false,
-        width: {
-                value: ['-=20px', '+=20px']
-        },
-        rotate: {
-                value: '+=2turn'
-        },
-        duration: 1800,
-        easing: 'easeInOutSine',
-        background: 'rgb(0, 252, 168)'
-});
 
 /* card */
 
@@ -163,43 +85,6 @@ projetsbtn.addEventListener('click', function () {
         projets.style.animation = "ease-in 1s scaling";
 })
 
-/* btnfull.addEventListener('click', () => {
-        boxsize.style.boxShadow = "0px 0px 0px 0px black";
-        btnbox.style.background = "whitesmoke";
-        animfull.play();
-})
-btnbox.addEventListener('click', () => {
-        boxsize.style.boxShadow = "0px 0px 20px 20px black";
-        btnfull.style.background = "whitesmoke";
-        animbox.play();
-})
-
-let animbox = anime({
-        targets: '.box',
-        autoplay: false,
-        width: {
-                value: ['-=20px', '+=20px']
-        },
-        rotate: {
-                value: '+=2turn'
-        },
-        duration: 1800,
-        easing: 'easeInOutSine',
-        background: 'rgb(0, 252, 168)'
-});
-let animfull = anime({
-        targets: '.full',
-        autoplay: false,
-        width: {
-                value: ['-=20px', '+=20px']
-        },
-        rotate: {
-                value: '+=2turn'
-        },
-        duration: 1800,
-        easing: 'easeInOutSine',
-        background: 'rgb(0, 252, 168)'
-}); */
 /* fin de scale */
 
 
@@ -207,26 +92,24 @@ let animfull = anime({
 dark.addEventListener('click', () => {
         document.documentElement.style.setProperty('--dark_first','#171717');
         document.documentElement.style.setProperty('--dark_txt','whitesmoke');
-        git.src = "images/img_perso/github.png";
-        link.src = "images/linkedin logo.png";
-        mail_dark.src = "images/mail.png";
-        call_dark.src = "images/call.png";
+        git.src = "images/img_perso/github.svg";
+        link.src = "images/linkedin logo.svg";
+        mail_dark.src = "images/mail.svg";
+        call_dark.src = "images/call.svg";
         logo_about.src = "images/img_perso/logo-white.svg";
         logo_nav.src = "images/img_perso/logo-white.svg";
         logo_nav_first.src = "images/img_perso/logo-white.svg";
-        /* boxsize.style.boxShadow = "whitesmoke"; */
 })
 light.addEventListener('click', () => {
         document.documentElement.style.setProperty('--dark_first','whitesmoke');
         document.documentElement.style.setProperty('--dark_txt','#171717');
-        git.src = "images/img_perso/git_dark.png";
-        link.src = "images/img_perso/in_dark.png";
-        mail_dark.src = "images/img_perso/mail_dark.png";
-        call_dark.src = "images/img_perso/tel_dark.png";
+        git.src = "images/img_perso/git_dark.svg";
+        link.src = "images/img_perso/in_dark.svg";
+        mail_dark.src = "images/img_perso/mail_dark.svg";
+        call_dark.src = "images/img_perso/tel_dark.svg";
         logo_about.src = "images/img_perso/logo-black.svg";
         logo_nav.src = "images/img_perso/logo-black.svg";
         logo_nav_first.src = "images/img_perso/logo-black.svg";
-        /* boxsize.style.boxShadow = "black"; */
 })
 
 
@@ -384,57 +267,102 @@ base.addEventListener('click', () => {
 
 /* fin de changez couleur d'action  */
 
+const floatAnimation = () => {
+        const tlCan = new TimelineMax({repeat:-1});
+        /*Can Animation*/
+       tlCan
+           //move top left
+       .to('.can > img', 3, { y:'-=30', x:'+=20',  rotation:'-=5', ease:Power1.easeInOut})
+       
+           //move down right
+       .to('.can > img', 2, { y:'+=30', x:'-=20', rotation:'-=5', ease:Power1.easeInOut})
+       
+       
+       .to('.can > img', 3, { y:'-=20',  rotation:'+=5', ease:Power1.easeInOut})
+       
+       .to('.can > img', 3, { y:'+=20',  rotation:'+=5', ease:Power1.easeInOut})
+       
+       
+       .to('.can > imgn', 3, { y:'-=50', ease:Power1.easeInOut})
+          
+       .to('.can > img', 3, { y:'+=50', ease:Power1.easeInOut})
+       
+       
+       .to('.can > img', 3, { y:'-=30', ease:Power1.easeInOut})
+          
+       .to('.can > img', 3, { y:'+=30', ease:Power1.easeInOut})
+       
+       
+       .to('.can > img', 2, { y:'-=30', ease:Power1.easeInOut})
+          
+       .to('.can > img', 2, { y:'+=30', ease:Power1.easeInOut})
+ 
+     TweenLite.to(tlCan, 27, {ease:Power1.easeInOut})
 
+   }
+   floatAnimation();
+
+/* scroll pos animation */
+
+const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+                const square = entry.target.querySelector('.square');
+
+                if (entry.isIntersecting) {
+                square.classList.add('square-animation');
+                return; // if we added the class, exit the function
+                }
+
+                // We're not intersecting, so remove the class!
+                square.classList.remove('square-animation');
+        });
+});
+
+observer.observe(document.querySelector('.square-wrapper'));
+
+const observer2 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+                const square2 = entry.target.querySelector('.square2');
+
+                if (entry.isIntersecting) {
+                square2.classList.add('square-animation2');
+                return; // if we added the class, exit the function
+                }
+
+                // We're not intersecting, so remove the class!
+                square2.classList.remove('square-animation2');
+        });
+});
+
+observer2.observe(document.querySelector('.square-wrapper2'));
+
+const observer3 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+                const square3 = entry.target.querySelector('.square3');
+
+                if (entry.isIntersecting) {
+                square3.classList.add('square-animation3');
+                return; // if we added the class, exit the function
+                }
+
+                // We're not intersecting, so remove the class!
+                square3.classList.remove('square-animation3');
+        });
+});
+
+observer3.observe(document.querySelector('.square-wrapper3'));
 
 /* validation du mail */
-/* function validateForm() {
-        var name =  document.getElementById('name').value;
-        if (name == "") {
-                document.querySelector('.status').innerHTML = "Name cannot be empty";
-        return false;
-        }
-        var email =  document.getElementById('email').value;
-        if (email == "") {
-                document.querySelector('.status').innerHTML = "Email cannot be empty";
-        return false;
-        } else {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(!re.test(email)){
-                document.querySelector('.status').innerHTML = "Email format invalid";
-        return false;
-        }
-        }
-        var subject =  document.getElementById('subject').value;
-        if (subject == "") {
-                document.querySelector('.status').innerHTML = "Subject cannot be empty";
-        return false;
-        }
-        var message =  document.getElementById('message').value;
-        if (message == "") {
-                document.querySelector('.status').innerHTML = "Message cannot be empty";
-        return false;
-        }
-                document.querySelector('.status').innerHTML = "Sending...";
-}
-document.getElementById('status').innerHTML = "Sending...";
-formData = {
-  'name': $('input[name=name]').val(),
-  'email': $('input[name=email]').val(),
-  'subject': $('input[name=subject]').val(),
-  'message': $('textarea[name=message]').val()
-}; */
 
 const form = document.querySelector('form');
 
 form.addEventListener('submit', e => {
     
-        e.preventDefault();
-
-        
+    e.preventDefault();
 
     const formData = new FormData(form);
 
-    fetch('../php/mail.php', {
+    fetch('./php/mail.php', {
         method: 'POST',
         body: formData
     })
@@ -471,31 +399,107 @@ form.addEventListener('submit', e => {
         }
         document.querySelector('.status').innerHTML = "Sending...";
     })
-
 })
 /* fin de validation mail */
 
 /* api medium */
 
-let blog_title = document.querySelector('.blog_title');
-let blog_img = document.querySelector('.blog_img');
-let blog_date = document.querySelector('.blog_date');
-let blog_descri = document.querySelector('.blog_descri');
+const blog_ = document.querySelector('.blog_')
 
 let url = "https://mediumpostapi.herokuapp.com/?usermedium=aruby9905";
 
 fetch(url)
 .then((resp) => resp.json())
 .then((data) => {
-    console.log(data);
-    let article_un = data.dataMedium[0];
-    let article_deux = data.dataMedium[1];
-    let b_title = document.createTextNode(article_deux.title);
-    blog_title.appendChild(b_title);
-    let b_date = document.createTextNode(article_deux.date);
-    blog_date.appendChild(b_date);
-    let b_descri = document.createTextNode(article_deux.descritpion);
-    blog_descri.appendChild(b_descri);
-    let b_img = article_deux.image;
-    blog_img.src=b_img;
+        console.log(data);
+        for (let index = 0; index < data.dataMedium.length; index++) {
+                create_blog(data.dataMedium[index]);
+        }
+
+        function create_blog(index){
+                blog_titre(index.title)
+                blog_imag(index.image)
+                blog_texte(index.description)
+                blog_date(index.date)
+                blog_link(index.link)
+        }
+
+        function blog_titre(titre){
+                if (titre == "") {
+                        let h2 = document.createElement('h2')
+                        blog_.appendChild(h2)
+                        let h2_text = document.createTextNode("Pas de titre...")
+                        h2.appendChild(h2_text)
+                } else {
+                        let h2 = document.createElement('h2')
+                        blog_.appendChild(h2)
+                        let h2_text = document.createTextNode(titre)
+                        h2.appendChild(h2_text)
+                }
+        }
+
+        function blog_imag(source){
+                if (source == "https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=53431a36f8f5") {
+                        let blog_imag = document.createElement('p')
+                        blog_.appendChild(blog_imag)
+                        let img_text = document.createTextNode('')
+                        blog_imag.appendChild(img_text)
+                } else {
+                        let blog_imag = document.createElement('img')
+                        blog_.appendChild(blog_imag)
+                        blog_imag.src = source
+                }
+        }
+
+        function blog_texte(text){
+                if (text == "") {
+                        let blog_descri = document.createElement('p')
+                        blog_.appendChild(blog_descri)
+                        let descri_text = document.createTextNode("Pas de description...")
+                        blog_descri.appendChild(descri_text)
+                } else {
+                        let blog_descri = document.createElement('p')
+                        blog_.appendChild(blog_descri)
+                        let descri_text = document.createTextNode(text)
+                        blog_descri.appendChild(descri_text)
+                }
+                
+        }
+
+        function blog_date(date){
+                if (date == "") {
+                        let blog_date = document.createElement('p')
+                        blog_.appendChild(blog_date)
+                        let date_text = document.createTextNode("Pas de description...")
+                        blog_date.appendChild(date_text)
+                } else {
+                        let blog_date = document.createElement('p')
+                        blog_.appendChild(blog_date)
+                        let date_text = document.createTextNode("Parue le : " + date)
+                        blog_date.appendChild(date_text)
+                }
+        }
+
+        function blog_link(link){
+                if (link == "") {
+                        let blog_link = document.createElement('a')
+                        blog_.appendChild(blog_link)
+                        blog_link.href = "#"
+                        let link_text = document.createTextNode("Pas de lien ...")
+                        blog_link.appendChild(link_text)
+                        blog_link.classList.add('blog_section')
+                        blog_link.setAttribute('target', 'blank_')
+                } else {
+                        let blog_link = document.createElement('a')
+                        blog_.appendChild(blog_link)
+                        blog_link.href = link
+                        let link_text = document.createTextNode("Lien de l'article")
+                        blog_link.appendChild(link_text)
+                        blog_link.classList.add('blog_section')
+                        blog_link.setAttribute('target', 'blank_')
+                }
+                
+        }
 })
+
+

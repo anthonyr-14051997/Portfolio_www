@@ -1,37 +1,22 @@
 <?php
 
-echo json_encode($_POST);
-
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-  $subject = $_POST['subject'];
-  header('Content-Type: application/json');
-  if ($name === '') {
-    print json_encode(array('message' => 'Name cannot be empty', 'code' => 0));
-    exit();
-  }
-  if ($email === '') {
-    print json_encode(array('message' => 'Email cannot be empty', 'code' => 0));
-    exit();
-  } else {
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      print json_encode(array('message' => 'Email format invalid.', 'code' => 0));
-      exit();
-    }
-  }
-  if ($subject === '') {
-    print json_encode(array('message' => 'Subject cannot be empty', 'code' => 0));
-    exit();
-  }
-  if ($message === '') {
-    print json_encode(array('message' => 'Message cannot be empty', 'code' => 0));
-    exit();
-  }
-  $content = "From: $name \nEmail: $email \nMessage: $message";
-  $recipient = "a.ruby@codeur.online";
-  $mailheader = "From: $email \r\n";
-  mail($recipient, $subject, $content, $mailheader) or die("Error!");
-  print json_encode(array('message' => 'Email successfully sent!', 'code' => 1));
-  exit();
+  
+  $name = $_POST['name_form'];
+  $dest = $_POST['email_form'];
+  $subject = $_POST['subject_form'];
+  $objet ='=?UTF-8?B?'.base64_encode($name).'?='.$subject;
+  $message=$_POST['message_form'];
+  $Entetes = "MIME-Version: 1.0\r\n";
+  $Entetes .= "Content-type: text/html; charset=UTF-8\r\n";
+  $Entetes .= "From: Formulaire <".$_POST['mail'].">\r\n";
+  $Entetes .= "Reply-To: Formulaire <".$_POST['mail'].">\r\n";
+  
+  if(mail($dest,$objet,$message,$entetes))
+    echo "Mail envoyé avec succès.";
+  else
+    echo "Un problème est survenu.";
+  exit;
+  
+  echo json_encode($_POST);
+  
 ?>
