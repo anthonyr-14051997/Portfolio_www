@@ -36,11 +36,11 @@ Page affichant mes blogs publié sur Medium.
 
 ## Lab
 
-Page affichant et éxpliquant mes mes expériences dans mon apprentissage
+Page affichant et éxpliquant mes expériences dans mon apprentissage
 
 ## Projet
 
-Page Affichant et expliquant mes projets fonctionnel.
+Page affichant et expliquant mes projets fonctionnel.
 
 ## Contact
 
