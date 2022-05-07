@@ -398,6 +398,11 @@ form.addEventListener('submit', e => {
         return false;
         }
         document.querySelector('.status').innerHTML = "Sending...";
+
+        if (data.validation == "Email envoyé") {
+                form.reset();
+                document.querySelector('.status').innerHTML = "Mail envoyé, merci !";
+        }
     })
 })
 /* fin de validation mail */

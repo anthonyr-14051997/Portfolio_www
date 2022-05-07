@@ -1,22 +1,32 @@
 <?php
 
   
-  $name = $_POST['name_form'];
-  $dest = $_POST['email_form'];
+
+$regleNomPrenom = "/^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$/";
+$regleEmail = "/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/";
+$regleMessage = "/^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$/";
+
+if((isset($_POST['name_form']))&&(preg_match($regleNomPrenom, $_POST['name_form']))){
+    $nom = $_POST['name_form'];
+}
+if((isset($_POST['email_form']))&&(preg_match($regleEmail, $_POST['email_form']))){
+    $email = $_POST['email_form'];
+}
+if((isset($_POST['message_form']))&&(preg_match($regleMessage, $_POST['message_form']))){
+    $message = $_POST['message_form'];
+}
+if((isset($_POST['subject_form']))&&(preg_match($regleMessage, $_POST['subject_form']))){
   $subject = $_POST['subject_form'];
-  $objet ='=?UTF-8?B?'.base64_encode($name).'?='.$subject;
-  $message=$_POST['message_form'];
-  $Entetes = "MIME-Version: 1.0\r\n";
-  $Entetes .= "Content-type: text/html; charset=UTF-8\r\n";
-  $Entetes .= "From: Formulaire <".$_POST['mail'].">\r\n";
-  $Entetes .= "Reply-To: Formulaire <".$_POST['mail'].">\r\n";
-  
-  if(mail($dest,$objet,$message,$entetes))
-    echo "Mail envoyé avec succès.";
-  else
-    echo "Un problème est survenu.";
-  exit;
-  
-  echo json_encode($_POST);
+}
+if(($nom)&&($email)&&($message)&&($subject)){
+    $res = array('validation' => "Email envoyé");
+    $entetes = "From : $email"."\n";
+    $nom_message = "De la part de -> $nom"."\r"."\n".$message."\n";
+    $entetes .= "MIME-Version: 1.0\r\n";
+    $entetes .= "Content-type: text/html; charset=UTF-8\r\n";
+    echo json_encode($res);
+    mail("aruby9905@gmail.com", "Sujet : ". $subject, nl2br($nom_message), $entetes);
+}
+
   
 ?>

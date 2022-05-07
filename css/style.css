@@ -2147,6 +2147,7 @@ For devices with smaller width like mobile phone
       width: 30vh;
       height: 40vh;
       border-radius: 10px;
+      filter: none;
     }
     .contents h4 {
       font-size: 2em;
@@ -2656,6 +2657,9 @@ for tabs and large phones
     .info_perso a {
       color: #007bff;
      }
+     .content-img {
+      filter: none;
+    }
   #blog .cards {
     margin-right: 5vh;
   }
