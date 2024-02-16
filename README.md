@@ -59,11 +59,11 @@ Comme sont nom l'indique, une page pour me contacter.
 ![Logo markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![Logo linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
-## Image
+# Image
 
-# Form
+## Form
 ![formulaire de contact](https://github.com/anthonyr-14051997/Portfolio_www/blob/main/images/form.png "Form")
-# Menu
+## Menu
 ![Menu](https://github.com/anthonyr-14051997/Portfolio_www/blob/main/images/menu.png "Menu")
-# Roue des modifs
+## Roue des modifs
 ![Roue-modif](https://github.com/anthonyr-14051997/Portfolio_www/blob/main/images/roue-modif.png "Roue des modifs")
