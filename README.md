@@ -61,9 +61,11 @@ Comme sont nom l'indique, une page pour me contacter.
 
 # Images
 
-## Form
-![formulaire de contact](https://github.com/anthonyr-14051997/Portfolio_www/blob/main/images/form.png "Form")
+## Ecran d'accueil
+![Ecran d'accueil](https://github.com/anthonyr-14051997/Portfolio_www/blob/main/images/accueil.png "Ecran d'accueil")
 ## Menu
 ![Menu](https://github.com/anthonyr-14051997/Portfolio_www/blob/main/images/menu.png "Menu")
 ## Roue des modifs
 ![Roue-modif](https://github.com/anthonyr-14051997/Portfolio_www/blob/main/images/roue-modif.png "Roue des modifs")
+## Formulaire de contact
+![formulaire de contact](https://github.com/anthonyr-14051997/Portfolio_www/blob/main/images/form.png "Form")
